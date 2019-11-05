@@ -24,7 +24,7 @@ class viewControllerFour: UIViewController {
     
     @IBOutlet weak var textField: UITextField!
     @IBAction func textField(_ sender: UITextField) {
-        if stateCity == textField.text {
+        if stateCity?.lowercased() == textField.text?.lowercased() {
             continueButton.isEnabled = true
         }
         else {
